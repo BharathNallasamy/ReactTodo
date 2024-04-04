@@ -2,9 +2,12 @@ import TodoComponent from "./TodoComponent";
 import styles from "./TodoList.module.css";
 
 export default function TodoList({ todos, setTodos }) {
+  const sortedTodos = todos
+    .slice()
+    .sort((a, b) => Number(a.done) - Number(b.done));
   return (
     <div className={styles.list}>
-      {todos.map((item) => {
+      {sortedTodos.map((item) => {
         return (
           <div>
             <TodoComponent

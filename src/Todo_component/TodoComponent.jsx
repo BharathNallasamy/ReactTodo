@@ -6,15 +6,6 @@ export default function TodoComponent({ item, todos, setTodos }) {
     setTodos(todos.filter((todo) => todo !== item));
   }
 
-  // function handleClick(name) {
-  //   console.log("Item Clicked:", name);
-  //   const newArr = todos.map((todo) => {
-  //     todo.name === name ? { ...todo, done: !todo.done } : todo;
-  //   });
-  //   setTodos(newArr);
-  // console.log(todos);
-  // }
-
   function handleClick(name) {
     console.log("Item Clicked:", name);
     const newArr = todos.map((todo) =>
