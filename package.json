@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "git": "git add . && git commit -m 'update' && git push",
-    "predeploy": "ng build --configuration production --base-href https://github.com/BharathNallasamy/ReactTodo.git", 
+    "predeploy": "ng build --configuration production --base-href https://github.com/BharathNallasamy/ReactTodo/",
     "deploy": "gh-pages -d dist/todos",
     "upload": "ng build --configuration production --base-href ./"
   },
