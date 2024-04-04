@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "../Todo_component/Form.module.css";
 
 export default function Form({ todos, setTodos }) {
-  // const [todo, setTodo] = useState("");
   const [todo, setTodo] = useState({ name: "", done: false });
 
   const handleSubmit = (e) => {
